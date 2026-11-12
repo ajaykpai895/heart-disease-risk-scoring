@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  # Interactive Streamlit Clinical Dashboard
+  web:
+    build: .
+    container_name: cardioscreen-streamlit
+    restart: unless-stopped
+    ports:
+      - "8501:8501"
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+    command: ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+
+  # High-throughput FastAPI REST Inference Microservice
+  api:
+    build: .
+    container_name: cardioscreen-api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    command: ["uvicorn", "src.api:app", "--host", "0.0.0.0", "--port", "8000"]
+
+  # Local MLflow Experiment Tracking Dashboard
+  mlflow:
+    build: .
+    container_name: cardioscreen-mlflow
+    restart: unless-stopped
+    ports:
+      - "5000:5000"
+    command: ["mlflow", "ui", "--host", "0.0.0.0", "--port", "5000", "--backend-store-uri", "./mlruns"]

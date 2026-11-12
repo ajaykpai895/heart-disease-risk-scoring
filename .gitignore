@@ -1,0 +1,59 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.dylib
+*.dll
+
+# Caches and test coverage
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+htmlcov/
+*.cover
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Local experiment tracking & Databases
+mlflow.db
+mlruns/
+*.sqlite
+*.sqlite3
+*.db
+
+# Temporary / duplicate files and logs
+data_raw.csv
+generate_eda_plots.py
+*.log
+
+# Secrets, credentials & environment variables
+.env
+.env.*
+*.pem
+*.key
+.streamlit/secrets.toml
+
+# IDE & Operating System artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,38 @@
+# -----------------------------------------------------------------------------
+# Cardiovascular Risk Screening & Clinical Decision Support System
+# Pinned Core Production & Research Dependencies
+# -----------------------------------------------------------------------------
+
+# Core Data & Modeling
+pandas>=2.0.0,<3.1.0
+numpy>=1.24.0,<2.5.0
+scikit-learn>=1.4.0,<1.9.0
+xgboost>=2.0.0,<3.5.0
+shap>=0.45.0,<0.55.0
+scipy>=1.10.0,<1.18.0
+joblib>=1.3.0,<1.6.0
+ucimlrepo>=0.0.6,<0.1.0
+
+# Visualization & Reporting
+matplotlib>=3.7.0,<3.11.0
+seaborn>=0.12.0,<0.14.0
+
+# Interactive Application
+streamlit>=1.30.0,<1.45.0
+
+# Fairness & Responsible AI
+fairlearn>=0.10.0,<0.16.0
+
+# Production Inference Microservice
+fastapi>=0.100.0,<0.165.0
+uvicorn>=0.23.0,<0.55.0
+pydantic>=2.0.0,<2.15.0
+
+# Experiment Tracking & Lineage
+mlflow>=2.10.0,<3.20.0
+
+# Testing & Code Quality
+pytest>=8.0.0,<10.0.0
+pytest-cov>=4.0.0,<8.0.0
+ruff>=0.4.0,<0.20.0
+httpx>=0.25.0,<0.30.0
