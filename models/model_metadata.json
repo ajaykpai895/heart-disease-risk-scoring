@@ -1,0 +1,83 @@
+{
+  "model_name": "Cardiovascular Risk Screening (Logistic Regression & XGBoost)",
+  "model_version": "1.0.0",
+  "created_at_utc": "2026-11-12T05:44:06.333425+00:00",
+  "git_commit": "unversioned_git_tree",
+  "environment": {
+    "python_version": "3.13.15",
+    "scikit_learn_version": "1.8.0",
+    "xgboost_version": "3.4.1",
+    "platform": "win32"
+  },
+  "dataset_lineage": {
+    "source": "UCI Cleveland Heart Disease (ID: 45)",
+    "file_path": "C:\\Users\\HP\\OneDrive\\Desktop\\dataanalyst\\heart-disease-risk-scoring\\data\\raw\\heart_disease_cleveland.csv",
+    "sha256_hash": "201a892d28eb6b1f7ed22dd80d6113cffcc174ccbcdfdc8ee321a7a54c8bbf6b",
+    "test_size": 0.2,
+    "random_seed": 42
+  },
+  "operating_parameters": {
+    "target_recall": 0.9,
+    "cost_fn_ratio": 10.0,
+    "threshold_logistic_regression": 0.3319747943825542,
+    "threshold_xgboost": 0.26944267749786377,
+    "cost_optimal_threshold_lr": 0.287,
+    "cost_optimal_threshold_xgb": 0.297
+  },
+  "performance_snapshot": {
+    "logistic_regression_holdout": {
+      "threshold": 0.332,
+      "roc_auc": 0.962,
+      "pr_auc": 0.949,
+      "brier_score": 0.086,
+      "recall": 1.0,
+      "recall_95ci": [
+        0.8794,
+        1.0
+      ],
+      "precision": 0.737,
+      "precision_95ci": [
+        0.5799,
+        0.8503
+      ],
+      "specificity": 0.697,
+      "specificity_95ci": [
+        0.5266,
+        0.8262
+      ],
+      "f1": 0.848,
+      "tp": 28,
+      "fp": 10,
+      "tn": 23,
+      "fn": 0
+    },
+    "xgboost_holdout": {
+      "threshold": 0.269,
+      "roc_auc": 0.962,
+      "pr_auc": 0.953,
+      "brier_score": 0.083,
+      "recall": 1.0,
+      "recall_95ci": [
+        0.8794,
+        1.0
+      ],
+      "precision": 0.737,
+      "precision_95ci": [
+        0.5799,
+        0.8503
+      ],
+      "specificity": 0.697,
+      "specificity_95ci": [
+        0.5266,
+        0.8262
+      ],
+      "f1": 0.848,
+      "tp": 28,
+      "fp": 10,
+      "tn": 23,
+      "fn": 0
+    },
+    "delong_test_p_value": 1.0,
+    "nadeau_bengio_p_value": 0.365
+  }
+}
