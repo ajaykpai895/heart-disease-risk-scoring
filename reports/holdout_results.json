@@ -1,0 +1,266 @@
+{
+  "holdout_results": {
+    "Dummy Baseline": {
+      "threshold": 0.5,
+      "roc_auc": 0.5,
+      "pr_auc": 0.459,
+      "brier_score": 0.459,
+      "recall": 0.0,
+      "recall_95ci": [
+        0.0,
+        0.1206
+      ],
+      "precision": 0.0,
+      "precision_95ci": [
+        0.0,
+        0.0
+      ],
+      "specificity": 1.0,
+      "specificity_95ci": [
+        0.8957,
+        1.0
+      ],
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "tn": 33,
+      "fn": 28
+    },
+    "Clinical Rule Baseline": {
+      "threshold": 0.5,
+      "roc_auc": 0.902,
+      "pr_auc": 0.858,
+      "brier_score": 0.13,
+      "recall": 0.929,
+      "recall_95ci": [
+        0.7735,
+        0.9802
+      ],
+      "precision": 0.788,
+      "precision_95ci": [
+        0.6225,
+        0.8932
+      ],
+      "specificity": 0.788,
+      "specificity_95ci": [
+        0.6225,
+        0.8932
+      ],
+      "f1": 0.852,
+      "tp": 26,
+      "fp": 7,
+      "tn": 26,
+      "fn": 2
+    },
+    "Logistic Regression": {
+      "threshold": 0.332,
+      "roc_auc": 0.962,
+      "pr_auc": 0.949,
+      "brier_score": 0.086,
+      "recall": 1.0,
+      "recall_95ci": [
+        0.8794,
+        1.0
+      ],
+      "precision": 0.737,
+      "precision_95ci": [
+        0.5799,
+        0.8503
+      ],
+      "specificity": 0.697,
+      "specificity_95ci": [
+        0.5266,
+        0.8262
+      ],
+      "f1": 0.848,
+      "tp": 28,
+      "fp": 10,
+      "tn": 23,
+      "fn": 0
+    },
+    "XGBoost": {
+      "threshold": 0.269,
+      "roc_auc": 0.962,
+      "pr_auc": 0.953,
+      "brier_score": 0.083,
+      "recall": 1.0,
+      "recall_95ci": [
+        0.8794,
+        1.0
+      ],
+      "precision": 0.737,
+      "precision_95ci": [
+        0.5799,
+        0.8503
+      ],
+      "specificity": 0.697,
+      "specificity_95ci": [
+        0.5266,
+        0.8262
+      ],
+      "f1": 0.848,
+      "tp": 28,
+      "fp": 10,
+      "tn": 23,
+      "fn": 0
+    }
+  },
+  "bootstrap_results": {
+    "Logistic Regression": {
+      "roc_auc": {
+        "mean": 0.962,
+        "std": 0.0234,
+        "ci_lower": 0.9063,
+        "ci_upper": 0.9957
+      },
+      "pr_auc": {
+        "mean": 0.9496,
+        "std": 0.0365,
+        "ci_lower": 0.8636,
+        "ci_upper": 0.9957
+      },
+      "recall": {
+        "mean": 1.0,
+        "std": 0.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0
+      },
+      "precision": {
+        "mean": 0.7409,
+        "std": 0.0685,
+        "ci_lower": 0.6059,
+        "ci_upper": 0.8696
+      },
+      "specificity": {
+        "mean": 0.7004,
+        "std": 0.0792,
+        "ci_lower": 0.5484,
+        "ci_upper": 0.8462
+      },
+      "brier_score": {
+        "mean": 0.0861,
+        "std": 0.0173,
+        "ci_lower": 0.0556,
+        "ci_upper": 0.123
+      }
+    },
+    "XGBoost": {
+      "roc_auc": {
+        "mean": 0.9621,
+        "std": 0.0212,
+        "ci_lower": 0.9161,
+        "ci_upper": 0.9954
+      },
+      "pr_auc": {
+        "mean": 0.9537,
+        "std": 0.0283,
+        "ci_lower": 0.8815,
+        "ci_upper": 0.9947
+      },
+      "recall": {
+        "mean": 1.0,
+        "std": 0.0,
+        "ci_lower": 1.0,
+        "ci_upper": 1.0
+      },
+      "precision": {
+        "mean": 0.7409,
+        "std": 0.0685,
+        "ci_lower": 0.6059,
+        "ci_upper": 0.8696
+      },
+      "specificity": {
+        "mean": 0.7004,
+        "std": 0.0792,
+        "ci_lower": 0.5484,
+        "ci_upper": 0.8462
+      },
+      "brier_score": {
+        "mean": 0.0835,
+        "std": 0.0191,
+        "ci_lower": 0.0506,
+        "ci_upper": 0.1229
+      }
+    }
+  },
+  "delong_test": {
+    "auc_a": 0.9621,
+    "auc_b": 0.9621,
+    "auc_difference": 0.0,
+    "standard_error": 0.0116,
+    "z_statistic": 0.0,
+    "p_value": 1.0,
+    "ci_95": [
+      -0.0228,
+      0.0228
+    ],
+    "is_significant": false
+  },
+  "nadeau_bengio_cv_ttest": {
+    "mean_diff": 0.0117,
+    "sample_std_diff": 0.0235,
+    "corrected_se": 0.0126,
+    "t_statistic": 0.923,
+    "df": 24,
+    "p_value": 0.365,
+    "is_significant": false
+  },
+  "nested_cv": {
+    "logistic_regression": {
+      "nested_mean": 0.9059750233663276,
+      "nested_std": 0.01726571586418463,
+      "non_nested": 0.8974685539902932,
+      "optimism_bias": -0.008506469376034387
+    },
+    "xgboost": {
+      "nested_mean": 0.8935204891726631,
+      "nested_std": 0.01830748115246029,
+      "non_nested": 0.8824834183529836,
+      "optimism_bias": -0.011037070819679529
+    }
+  },
+  "calibration": {
+    "logistic_regression": {
+      "Raw": {
+        "brier": 0.0863,
+        "auc": 0.9621
+      },
+      "Platt (Sigmoid)": {
+        "brier": 0.0815,
+        "auc": 0.961
+      },
+      "Isotonic": {
+        "brier": 0.0814,
+        "auc": 0.9616
+      }
+    },
+    "xgboost": {
+      "Raw": {
+        "brier": 0.0833,
+        "auc": 0.9621
+      },
+      "Platt (Sigmoid)": {
+        "brier": 0.0847,
+        "auc": 0.9578
+      },
+      "Isotonic": {
+        "brier": 0.0787,
+        "auc": 0.9567
+      }
+    }
+  },
+  "cost_sensitive": {
+    "logistic_regression": {
+      "optimal_threshold": 0.287,
+      "min_cost": 10.0,
+      "default_50_cost": 25.0,
+      "savings": 15.0
+    },
+    "xgboost": {
+      "optimal_threshold": 0.297,
+      "min_cost": 7.0,
+      "default_50_cost": 34.0,
+      "savings": 27.0
+    }
+  }
+}

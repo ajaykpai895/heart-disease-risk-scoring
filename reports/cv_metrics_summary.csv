@@ -1,0 +1,5 @@
+,roc_auc,roc_auc,pr_auc,pr_auc,recall,recall,precision,precision,specificity,specificity,f1_score,f1_score,brier_score,brier_score
+,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std
+model,,,,,,,,,,,,,,
+Logistic Regression,0.907,0.034,0.901,0.039,0.806,0.087,0.826,0.065,0.854,0.061,0.813,0.063,0.122,0.021
+XGBoost,0.9,0.032,0.895,0.033,0.755,0.091,0.829,0.059,0.863,0.062,0.786,0.053,0.129,0.022

@@ -1,0 +1,920 @@
+{
+  "subgroup_performance": {
+    "Logistic Regression": {
+      "Sex: Male": {
+        "n_total": 41,
+        "n_positive": 21,
+        "n_negative": 20,
+        "threshold": 0.332,
+        "tp": 21,
+        "fn": 0,
+        "fp": 8,
+        "tn": 12,
+        "recall": 1.0,
+        "recall_95ci": [
+          0.845,
+          1.0
+        ],
+        "fnr": 0.0,
+        "fnr_95ci": [
+          0.0,
+          0.155
+        ],
+        "precision": 0.724,
+        "precision_95ci": [
+          0.543,
+          0.853
+        ],
+        "roc_auc": 0.945,
+        "pr_auc": 0.945,
+        "brier_score": 0.103,
+        "warnings": []
+      },
+      "Sex: Female": {
+        "n_total": 20,
+        "n_positive": 7,
+        "n_negative": 13,
+        "threshold": 0.332,
+        "tp": 7,
+        "fn": 0,
+        "fp": 2,
+        "tn": 11,
+        "recall": 1.0,
+        "recall_95ci": [
+          0.646,
+          1.0
+        ],
+        "fnr": 0.0,
+        "fnr_95ci": [
+          0.0,
+          0.354
+        ],
+        "precision": 0.778,
+        "precision_95ci": [
+          0.453,
+          0.937
+        ],
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.052,
+        "warnings": [
+          "Only 7 positive labels \u2014 Recall and FNR estimates are unreliable. Do NOT draw clinical conclusions from this cell."
+        ]
+      },
+      "Age: <45": {
+        "n_total": 16,
+        "n_positive": 4,
+        "n_negative": 12,
+        "threshold": 0.332,
+        "tp": 4,
+        "fn": 0,
+        "fp": 1,
+        "tn": 11,
+        "recall": 1.0,
+        "recall_95ci": [
+          0.51,
+          1.0
+        ],
+        "fnr": 0.0,
+        "fnr_95ci": [
+          0.0,
+          0.49
+        ],
+        "precision": 0.8,
+        "precision_95ci": [
+          0.376,
+          0.964
+        ],
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.058,
+        "warnings": [
+          "Only 4 positive labels \u2014 Recall and FNR estimates are unreliable. Do NOT draw clinical conclusions from this cell.",
+          "Total n=16 \u2014 AUC estimate is highly unstable. Treat as indicative only."
+        ]
+      },
+      "Age: 45\u201360": {
+        "n_total": 30,
+        "n_positive": 15,
+        "n_negative": 15,
+        "threshold": 0.332,
+        "tp": 15,
+        "fn": 0,
+        "fp": 5,
+        "tn": 10,
+        "recall": 1.0,
+        "recall_95ci": [
+          0.796,
+          1.0
+        ],
+        "fnr": 0.0,
+        "fnr_95ci": [
+          0.0,
+          0.204
+        ],
+        "precision": 0.75,
+        "precision_95ci": [
+          0.531,
+          0.888
+        ],
+        "roc_auc": 0.973,
+        "pr_auc": 0.978,
+        "brier_score": 0.076,
+        "warnings": []
+      },
+      "Age: >60": {
+        "n_total": 15,
+        "n_positive": 9,
+        "n_negative": 6,
+        "threshold": 0.332,
+        "tp": 9,
+        "fn": 0,
+        "fp": 4,
+        "tn": 2,
+        "recall": 1.0,
+        "recall_95ci": [
+          0.701,
+          1.0
+        ],
+        "fnr": 0.0,
+        "fnr_95ci": [
+          0.0,
+          0.299
+        ],
+        "precision": 0.692,
+        "precision_95ci": [
+          0.424,
+          0.873
+        ],
+        "roc_auc": 0.87,
+        "pr_auc": 0.878,
+        "brier_score": 0.137,
+        "warnings": [
+          "Only 9 positive labels \u2014 Recall and FNR estimates are unreliable. Do NOT draw clinical conclusions from this cell.",
+          "Total n=15 \u2014 AUC estimate is highly unstable. Treat as indicative only."
+        ]
+      },
+      "Overall": {
+        "n_total": 61,
+        "n_positive": 28,
+        "n_negative": 33,
+        "threshold": 0.332,
+        "tp": 28,
+        "fn": 0,
+        "fp": 10,
+        "tn": 23,
+        "recall": 1.0,
+        "recall_95ci": [
+          0.879,
+          1.0
+        ],
+        "fnr": 0.0,
+        "fnr_95ci": [
+          0.0,
+          0.121
+        ],
+        "precision": 0.737,
+        "precision_95ci": [
+          0.58,
+          0.85
+        ],
+        "roc_auc": 0.962,
+        "pr_auc": 0.949,
+        "brier_score": 0.086,
+        "warnings": []
+      }
+    },
+    "XGBoost": {
+      "Sex: Male": {
+        "n_total": 41,
+        "n_positive": 21,
+        "n_negative": 20,
+        "threshold": 0.269,
+        "tp": 21,
+        "fn": 0,
+        "fp": 8,
+        "tn": 12,
+        "recall": 1.0,
+        "recall_95ci": [
+          0.845,
+          1.0
+        ],
+        "fnr": 0.0,
+        "fnr_95ci": [
+          0.0,
+          0.155
+        ],
+        "precision": 0.724,
+        "precision_95ci": [
+          0.543,
+          0.853
+        ],
+        "roc_auc": 0.94,
+        "pr_auc": 0.943,
+        "brier_score": 0.103,
+        "warnings": []
+      },
+      "Sex: Female": {
+        "n_total": 20,
+        "n_positive": 7,
+        "n_negative": 13,
+        "threshold": 0.269,
+        "tp": 7,
+        "fn": 0,
+        "fp": 2,
+        "tn": 11,
+        "recall": 1.0,
+        "recall_95ci": [
+          0.646,
+          1.0
+        ],
+        "fnr": 0.0,
+        "fnr_95ci": [
+          0.0,
+          0.354
+        ],
+        "precision": 0.778,
+        "precision_95ci": [
+          0.453,
+          0.937
+        ],
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.042,
+        "warnings": [
+          "Only 7 positive labels \u2014 Recall and FNR estimates are unreliable. Do NOT draw clinical conclusions from this cell."
+        ]
+      },
+      "Age: <45": {
+        "n_total": 16,
+        "n_positive": 4,
+        "n_negative": 12,
+        "threshold": 0.269,
+        "tp": 4,
+        "fn": 0,
+        "fp": 1,
+        "tn": 11,
+        "recall": 1.0,
+        "recall_95ci": [
+          0.51,
+          1.0
+        ],
+        "fnr": 0.0,
+        "fnr_95ci": [
+          0.0,
+          0.49
+        ],
+        "precision": 0.8,
+        "precision_95ci": [
+          0.376,
+          0.964
+        ],
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "brier_score": 0.044,
+        "warnings": [
+          "Only 4 positive labels \u2014 Recall and FNR estimates are unreliable. Do NOT draw clinical conclusions from this cell.",
+          "Total n=16 \u2014 AUC estimate is highly unstable. Treat as indicative only."
+        ]
+      },
+      "Age: 45\u201360": {
+        "n_total": 30,
+        "n_positive": 15,
+        "n_negative": 15,
+        "threshold": 0.269,
+        "tp": 15,
+        "fn": 0,
+        "fp": 5,
+        "tn": 10,
+        "recall": 1.0,
+        "recall_95ci": [
+          0.796,
+          1.0
+        ],
+        "fnr": 0.0,
+        "fnr_95ci": [
+          0.0,
+          0.204
+        ],
+        "precision": 0.75,
+        "precision_95ci": [
+          0.531,
+          0.888
+        ],
+        "roc_auc": 0.969,
+        "pr_auc": 0.972,
+        "brier_score": 0.08,
+        "warnings": []
+      },
+      "Age: >60": {
+        "n_total": 15,
+        "n_positive": 9,
+        "n_negative": 6,
+        "threshold": 0.269,
+        "tp": 9,
+        "fn": 0,
+        "fp": 4,
+        "tn": 2,
+        "recall": 1.0,
+        "recall_95ci": [
+          0.701,
+          1.0
+        ],
+        "fnr": 0.0,
+        "fnr_95ci": [
+          0.0,
+          0.299
+        ],
+        "precision": 0.692,
+        "precision_95ci": [
+          0.424,
+          0.873
+        ],
+        "roc_auc": 0.87,
+        "pr_auc": 0.917,
+        "brier_score": 0.133,
+        "warnings": [
+          "Only 9 positive labels \u2014 Recall and FNR estimates are unreliable. Do NOT draw clinical conclusions from this cell.",
+          "Total n=15 \u2014 AUC estimate is highly unstable. Treat as indicative only."
+        ]
+      },
+      "Overall": {
+        "n_total": 61,
+        "n_positive": 28,
+        "n_negative": 33,
+        "threshold": 0.269,
+        "tp": 28,
+        "fn": 0,
+        "fp": 10,
+        "tn": 23,
+        "recall": 1.0,
+        "recall_95ci": [
+          0.879,
+          1.0
+        ],
+        "fnr": 0.0,
+        "fnr_95ci": [
+          0.0,
+          0.121
+        ],
+        "precision": 0.737,
+        "precision_95ci": [
+          0.58,
+          0.85
+        ],
+        "roc_auc": 0.962,
+        "pr_auc": 0.953,
+        "brier_score": 0.083,
+        "warnings": []
+      }
+    }
+  },
+  "subgroup_calibration": {
+    "Logistic Regression": {
+      "Sex: Male": {
+        "n": 41,
+        "brier_score": 0.103,
+        "mean_calibration_gap": 0.171,
+        "bin_data": [
+          {
+            "bin": 0,
+            "n": 9,
+            "mean_predicted": 0.142,
+            "mean_observed": 0.0,
+            "gap": 0.142
+          },
+          {
+            "bin": 1,
+            "n": 7,
+            "mean_predicted": 0.326,
+            "mean_observed": 0.143,
+            "gap": 0.183
+          },
+          {
+            "bin": 2,
+            "n": 6,
+            "mean_predicted": 0.556,
+            "mean_observed": 0.333,
+            "gap": 0.222
+          },
+          {
+            "bin": 3,
+            "n": 4,
+            "mean_predicted": 0.717,
+            "mean_observed": 1.0,
+            "gap": 0.283
+          },
+          {
+            "bin": 4,
+            "n": 15,
+            "mean_predicted": 0.907,
+            "mean_observed": 0.933,
+            "gap": 0.026
+          }
+        ],
+        "warning": null
+      },
+      "Sex: Female": {
+        "n": 20,
+        "brier_score": 0.052,
+        "mean_calibration_gap": 0.277,
+        "bin_data": [
+          {
+            "bin": 0,
+            "n": 10,
+            "mean_predicted": 0.121,
+            "mean_observed": 0.0,
+            "gap": 0.121
+          },
+          {
+            "bin": 1,
+            "n": 3,
+            "mean_predicted": 0.336,
+            "mean_observed": 0.0,
+            "gap": 0.336
+          },
+          {
+            "bin": 2,
+            "n": 1,
+            "mean_predicted": 0.442,
+            "mean_observed": 1.0,
+            "gap": 0.558
+          },
+          {
+            "bin": 3,
+            "n": 3,
+            "mean_predicted": 0.769,
+            "mean_observed": 1.0,
+            "gap": 0.231
+          },
+          {
+            "bin": 4,
+            "n": 3,
+            "mean_predicted": 0.86,
+            "mean_observed": 1.0,
+            "gap": 0.14
+          }
+        ],
+        "warning": "n=20 is small; calibration bins may contain < 5 patients."
+      },
+      "Age: <45": {
+        "n": 16,
+        "brier_score": 0.058,
+        "mean_calibration_gap": 0.228,
+        "bin_data": [
+          {
+            "bin": 0,
+            "n": 9,
+            "mean_predicted": 0.132,
+            "mean_observed": 0.0,
+            "gap": 0.132
+          },
+          {
+            "bin": 1,
+            "n": 3,
+            "mean_predicted": 0.308,
+            "mean_observed": 0.0,
+            "gap": 0.308
+          },
+          {
+            "bin": 2,
+            "n": 2,
+            "mean_predicted": 0.54,
+            "mean_observed": 1.0,
+            "gap": 0.46
+          },
+          {
+            "bin": 3,
+            "n": 1,
+            "mean_predicted": 0.793,
+            "mean_observed": 1.0,
+            "gap": 0.207
+          },
+          {
+            "bin": 4,
+            "n": 1,
+            "mean_predicted": 0.967,
+            "mean_observed": 1.0,
+            "gap": 0.033
+          }
+        ],
+        "warning": "n=16 is small; calibration bins may contain < 5 patients."
+      },
+      "Age: 45\u201360": {
+        "n": 30,
+        "brier_score": 0.076,
+        "mean_calibration_gap": 0.16,
+        "bin_data": [
+          {
+            "bin": 0,
+            "n": 9,
+            "mean_predicted": 0.137,
+            "mean_observed": 0.0,
+            "gap": 0.137
+          },
+          {
+            "bin": 1,
+            "n": 5,
+            "mean_predicted": 0.348,
+            "mean_observed": 0.2,
+            "gap": 0.148
+          },
+          {
+            "bin": 2,
+            "n": 3,
+            "mean_predicted": 0.513,
+            "mean_observed": 0.333,
+            "gap": 0.18
+          },
+          {
+            "bin": 3,
+            "n": 3,
+            "mean_predicted": 0.761,
+            "mean_observed": 1.0,
+            "gap": 0.239
+          },
+          {
+            "bin": 4,
+            "n": 10,
+            "mean_predicted": 0.902,
+            "mean_observed": 1.0,
+            "gap": 0.098
+          }
+        ],
+        "warning": null
+      },
+      "Age: >60": {
+        "n": 15,
+        "brier_score": 0.137,
+        "mean_calibration_gap": 0.258,
+        "bin_data": [
+          {
+            "bin": 0,
+            "n": 1,
+            "mean_predicted": 0.071,
+            "mean_observed": 0.0,
+            "gap": 0.071
+          },
+          {
+            "bin": 1,
+            "n": 2,
+            "mean_predicted": 0.311,
+            "mean_observed": 0.0,
+            "gap": 0.311
+          },
+          {
+            "bin": 2,
+            "n": 2,
+            "mean_predicted": 0.578,
+            "mean_observed": 0.0,
+            "gap": 0.578
+          },
+          {
+            "bin": 3,
+            "n": 3,
+            "mean_predicted": 0.698,
+            "mean_observed": 1.0,
+            "gap": 0.302
+          },
+          {
+            "bin": 4,
+            "n": 7,
+            "mean_predicted": 0.886,
+            "mean_observed": 0.857,
+            "gap": 0.029
+          }
+        ],
+        "warning": "n=15 is small; calibration bins may contain < 5 patients."
+      }
+    },
+    "XGBoost": {
+      "Sex: Male": {
+        "n": 41,
+        "brier_score": 0.103,
+        "mean_calibration_gap": 0.078,
+        "bin_data": [
+          {
+            "bin": 0,
+            "n": 9,
+            "mean_predicted": 0.1,
+            "mean_observed": 0.0,
+            "gap": 0.1
+          },
+          {
+            "bin": 1,
+            "n": 7,
+            "mean_predicted": 0.288,
+            "mean_observed": 0.143,
+            "gap": 0.145
+          },
+          {
+            "bin": 2,
+            "n": 3,
+            "mean_predicted": 0.457,
+            "mean_observed": 0.333,
+            "gap": 0.124
+          },
+          {
+            "bin": 3,
+            "n": 8,
+            "mean_predicted": 0.744,
+            "mean_observed": 0.75,
+            "gap": 0.006
+          },
+          {
+            "bin": 4,
+            "n": 14,
+            "mean_predicted": 0.915,
+            "mean_observed": 0.929,
+            "gap": 0.013
+          }
+        ],
+        "warning": null
+      },
+      "Sex: Female": {
+        "n": 20,
+        "brier_score": 0.042,
+        "mean_calibration_gap": 0.252,
+        "bin_data": [
+          {
+            "bin": 0,
+            "n": 11,
+            "mean_predicted": 0.082,
+            "mean_observed": 0.0,
+            "gap": 0.082
+          },
+          {
+            "bin": 1,
+            "n": 2,
+            "mean_predicted": 0.282,
+            "mean_observed": 0.0,
+            "gap": 0.282
+          },
+          {
+            "bin": 2,
+            "n": 2,
+            "mean_predicted": 0.531,
+            "mean_observed": 1.0,
+            "gap": 0.469
+          },
+          {
+            "bin": 3,
+            "n": 1,
+            "mean_predicted": 0.676,
+            "mean_observed": 1.0,
+            "gap": 0.324
+          },
+          {
+            "bin": 4,
+            "n": 4,
+            "mean_predicted": 0.895,
+            "mean_observed": 1.0,
+            "gap": 0.105
+          }
+        ],
+        "warning": "n=20 is small; calibration bins may contain < 5 patients."
+      },
+      "Age: <45": {
+        "n": 16,
+        "brier_score": 0.044,
+        "mean_calibration_gap": 0.256,
+        "bin_data": [
+          {
+            "bin": 0,
+            "n": 9,
+            "mean_predicted": 0.089,
+            "mean_observed": 0.0,
+            "gap": 0.089
+          },
+          {
+            "bin": 1,
+            "n": 3,
+            "mean_predicted": 0.254,
+            "mean_observed": 0.0,
+            "gap": 0.254
+          },
+          {
+            "bin": 2,
+            "n": 1,
+            "mean_predicted": 0.439,
+            "mean_observed": 1.0,
+            "gap": 0.561
+          },
+          {
+            "bin": 3,
+            "n": 1,
+            "mean_predicted": 0.718,
+            "mean_observed": 1.0,
+            "gap": 0.282
+          },
+          {
+            "bin": 4,
+            "n": 2,
+            "mean_predicted": 0.904,
+            "mean_observed": 1.0,
+            "gap": 0.096
+          }
+        ],
+        "warning": "n=16 is small; calibration bins may contain < 5 patients."
+      },
+      "Age: 45\u201360": {
+        "n": 30,
+        "brier_score": 0.08,
+        "mean_calibration_gap": 0.096,
+        "bin_data": [
+          {
+            "bin": 0,
+            "n": 9,
+            "mean_predicted": 0.083,
+            "mean_observed": 0.0,
+            "gap": 0.083
+          },
+          {
+            "bin": 1,
+            "n": 5,
+            "mean_predicted": 0.307,
+            "mean_observed": 0.2,
+            "gap": 0.107
+          },
+          {
+            "bin": 2,
+            "n": 3,
+            "mean_predicted": 0.498,
+            "mean_observed": 0.667,
+            "gap": 0.169
+          },
+          {
+            "bin": 3,
+            "n": 3,
+            "mean_predicted": 0.705,
+            "mean_observed": 0.667,
+            "gap": 0.038
+          },
+          {
+            "bin": 4,
+            "n": 10,
+            "mean_predicted": 0.916,
+            "mean_observed": 1.0,
+            "gap": 0.084
+          }
+        ],
+        "warning": null
+      },
+      "Age: >60": {
+        "n": 15,
+        "brier_score": 0.133,
+        "mean_calibration_gap": 0.205,
+        "bin_data": [
+          {
+            "bin": 0,
+            "n": 2,
+            "mean_predicted": 0.13,
+            "mean_observed": 0.0,
+            "gap": 0.13
+          },
+          {
+            "bin": 1,
+            "n": 1,
+            "mean_predicted": 0.28,
+            "mean_observed": 0.0,
+            "gap": 0.28
+          },
+          {
+            "bin": 2,
+            "n": 1,
+            "mean_predicted": 0.502,
+            "mean_observed": 0.0,
+            "gap": 0.502
+          },
+          {
+            "bin": 3,
+            "n": 5,
+            "mean_predicted": 0.758,
+            "mean_observed": 0.8,
+            "gap": 0.042
+          },
+          {
+            "bin": 4,
+            "n": 6,
+            "mean_predicted": 0.904,
+            "mean_observed": 0.833,
+            "gap": 0.071
+          }
+        ],
+        "warning": "n=15 is small; calibration bins may contain < 5 patients."
+      }
+    }
+  },
+  "fairness_metrics": {
+    "Logistic Regression": {
+      "sex": {
+        "equal_opportunity_difference": 0.2462,
+        "demographic_parity_difference": 0.2573,
+        "per_group": [
+          {
+            "sensitive_feature_0": "Female",
+            "recall": 1.0,
+            "fnr": 0.0,
+            "selection_rate": 0.45
+          },
+          {
+            "sensitive_feature_0": "Male",
+            "recall": 1.0,
+            "fnr": 0.0,
+            "selection_rate": 0.7073170731707317
+          }
+        ],
+        "eod_interpretation": "EOD = 0.246: Substantial gap detected. This warrants investigation but cannot be confirmed as systematic bias without a larger validation cohort stratified by sex.",
+        "dpd_interpretation": "DPD = 0.257: Referral rates differ by 26% across sex groups. Note: this dataset has a severe sex imbalance (206M vs 97F) \u2014 a DPD driven primarily by prevalence differences is expected and does NOT by itself indicate algorithmic bias.",
+        "data_limitation": "Test set n=61; sex subgroups are very small. All fairness estimates carry wide uncertainty intervals and should not be used to certify or condemn the model."
+      },
+      "age_band": {
+        "equal_opportunity_difference": 0.5833,
+        "demographic_parity_difference": 0.5542,
+        "per_group": [
+          {
+            "sensitive_feature_0": "45\u201360",
+            "recall": 1.0,
+            "fnr": 0.0,
+            "selection_rate": 0.6666666666666666
+          },
+          {
+            "sensitive_feature_0": "<45",
+            "recall": 1.0,
+            "fnr": 0.0,
+            "selection_rate": 0.3125
+          },
+          {
+            "sensitive_feature_0": ">60",
+            "recall": 1.0,
+            "fnr": 0.0,
+            "selection_rate": 0.8666666666666667
+          }
+        ],
+        "eod_interpretation": "EOD = 0.583: Substantial gap detected. This warrants investigation but cannot be confirmed as systematic bias without a larger validation cohort stratified by age_band.",
+        "dpd_interpretation": "DPD = 0.554: Referral rates differ by 55% across age_band groups. Note: this dataset has a severe sex imbalance (206M vs 97F) \u2014 a DPD driven primarily by prevalence differences is expected and does NOT by itself indicate algorithmic bias.",
+        "data_limitation": "Test set n=61; age_band subgroups are very small. All fairness estimates carry wide uncertainty intervals and should not be used to certify or condemn the model."
+      }
+    },
+    "XGBoost": {
+      "sex": {
+        "equal_opportunity_difference": 0.2462,
+        "demographic_parity_difference": 0.2573,
+        "per_group": [
+          {
+            "sensitive_feature_0": "Female",
+            "recall": 1.0,
+            "fnr": 0.0,
+            "selection_rate": 0.45
+          },
+          {
+            "sensitive_feature_0": "Male",
+            "recall": 1.0,
+            "fnr": 0.0,
+            "selection_rate": 0.7073170731707317
+          }
+        ],
+        "eod_interpretation": "EOD = 0.246: Substantial gap detected. This warrants investigation but cannot be confirmed as systematic bias without a larger validation cohort stratified by sex.",
+        "dpd_interpretation": "DPD = 0.257: Referral rates differ by 26% across sex groups. Note: this dataset has a severe sex imbalance (206M vs 97F) \u2014 a DPD driven primarily by prevalence differences is expected and does NOT by itself indicate algorithmic bias.",
+        "data_limitation": "Test set n=61; sex subgroups are very small. All fairness estimates carry wide uncertainty intervals and should not be used to certify or condemn the model."
+      },
+      "age_band": {
+        "equal_opportunity_difference": 0.5833,
+        "demographic_parity_difference": 0.5542,
+        "per_group": [
+          {
+            "sensitive_feature_0": "45\u201360",
+            "recall": 1.0,
+            "fnr": 0.0,
+            "selection_rate": 0.6666666666666666
+          },
+          {
+            "sensitive_feature_0": "<45",
+            "recall": 1.0,
+            "fnr": 0.0,
+            "selection_rate": 0.3125
+          },
+          {
+            "sensitive_feature_0": ">60",
+            "recall": 1.0,
+            "fnr": 0.0,
+            "selection_rate": 0.8666666666666667
+          }
+        ],
+        "eod_interpretation": "EOD = 0.583: Substantial gap detected. This warrants investigation but cannot be confirmed as systematic bias without a larger validation cohort stratified by age_band.",
+        "dpd_interpretation": "DPD = 0.554: Referral rates differ by 55% across age_band groups. Note: this dataset has a severe sex imbalance (206M vs 97F) \u2014 a DPD driven primarily by prevalence differences is expected and does NOT by itself indicate algorithmic bias.",
+        "data_limitation": "Test set n=61; age_band subgroups are very small. All fairness estimates carry wide uncertainty intervals and should not be used to certify or condemn the model."
+      }
+    }
+  },
+  "metadata": {
+    "dataset": "UCI Cleveland Heart Disease (n=303, test n=61)",
+    "sensitive_features": [
+      "sex",
+      "age_band"
+    ],
+    "min_positive_cell_threshold": 15,
+    "min_auc_cell_threshold": 20,
+    "caveat": "All fairness estimates are based on a 61-patient holdout set. Subgroup cells are extremely small. No conclusions about systematic algorithmic bias can be drawn from this dataset alone."
+  }
+}
